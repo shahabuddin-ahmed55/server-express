@@ -5,14 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naat Collection</title>
-    <link rel="stylesheet" type="text/css" href="../public/css/style.css" />
 </head>
 <body>
    
     <form action="/index">
-        Name <%=  locals.title || "Default"%> : <input type="text" name="name" value="Name" id="" style="background-color:aqua" /><br>
-        Password: <input type="password" name="password" value="passowrd" id="" /><br>
-        Description: <textarea name="text" id="" cols="30" rows="10"></textarea><br>
+        Name <%=  locals.title || "Default"%> : <input type="text" name="name" method='get' /><br>
         <button>Submit</button>
     </form>
 
