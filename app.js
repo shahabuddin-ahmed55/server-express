@@ -1,11 +1,17 @@
 const express = require('express')
 const app = express();
-
+const routes = require("./routes/users")
 
 
 app.use((req, res, next) => {
-  res.send(req.url);
+  console.log(req.url);
+  next();
 })
+
+
+
+app.use("/form", routes)
+
 
 
 app.listen("3000", () => {
