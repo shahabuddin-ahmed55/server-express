@@ -5,12 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Naat Collection</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
    
-    <form action="/index">
-        Name <%=  locals.title || "Default"%> : <input type="text" name="name" method='get' /><br>
-        <button>Submit</button>
+    
+    <form action="/form" method="POST">
+    <input name="input" placeholder="Favicon" require="require">
+    <button>Submit</button>
+    </form>
+    
     </form>
 
     
